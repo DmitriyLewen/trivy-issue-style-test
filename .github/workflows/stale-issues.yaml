@@ -12,13 +12,10 @@ jobs:
     - uses: actions/stale@v8
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'This issue is stale because it has been labeled with inactivity.'
         stale-pr-message: 'This PR is stale because it has been labeled with inactivity.'
-        exempt-issue-labels: 'lifecycle/frozen,lifecycle/active,priority/critical-urgent,priority/important-soon,priority/important-longterm,priority/backlog,priority/awaiting-more-evidence'
         exempt-pr-labels: 'lifecycle/active'
         stale-pr-label: 'lifecycle/stale'
-        stale-issue-label: 'lifecycle/stale'
-        days-before-stale: '0.01'
+        days-before-stale: '0.001'
         days-before-close: 2
         days-before-issue-stale: '-1'
         days-before-issue-close: '-1'
