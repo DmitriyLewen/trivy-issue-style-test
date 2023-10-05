@@ -2,6 +2,8 @@ name: "Stale issues"
 on:
   schedule:
     - cron: '0 7 * * *'
+  workflow_dispatch:
+
 jobs:
   stale:
     timeout-minutes: 1
